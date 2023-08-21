@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imgSlider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:animateLayoutChanges="true"
+                app:iss_auto_cycle="true"
+                app:iss_delay="2000"
+                app:iss_period="2000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@string/bold"
+                android:text="Our Story"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/title_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:padding="10dp"
+                android:text="@string/about_college"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/Sony_lal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@string/bold"
+                        android:text="Department"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title_size" />
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@color/yellow">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Programing Language"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Management"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Sports"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Competitive Exam"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_marginTop="@dimen/text_margin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0.3"-->
+<!--                    android:layout_marginTop="@dimen/text_margin"-->
+<!--                    android:fontFamily="@string/bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Contact Us"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/title_size"-->
+<!--                    />-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1.7"-->
+<!--                    android:text="@string/contact_us"-->
+<!--                    android:layout_marginHorizontal="@dimen/text_margin"-->
+<!--                    android:layout_marginTop="@dimen/text_margin"-->
+<!--                    android:textSize="@dimen/text_size1"-->
+<!--                    android:fontFamily="@string/light"-->
+<!--                    android:textColor="@color/textColor"-->
+<!--                    android:padding="10dp"/>-->
+
+<!--            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/bold"
+                android:text="Map"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size" />
+
+
+            <TextView
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="PLease Click on Below Image to Open Map Location of College"
+                />
+
+            <ImageView
+                android:layout_marginTop="@dimen/text_margin"
+                android:id="@+id/map"
+                android:padding="10dp"
+                android:layout_marginVertical="20dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/sony_map"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
