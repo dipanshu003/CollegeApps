@@ -1,1 +1,1 @@
-# CollegeApps
+Basically, it contains 2 applications first is User App and other is Admin App. In User App we have some funcationalities such that display faculty, notice, gallery, location, etc. and we can upload data in User App with the help of Admin App. We use XML for Layout Designing, Java for Back-End manipulation and Firebase as Database(NoSQL).
